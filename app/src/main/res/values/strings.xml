@@ -1,3 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MiBanco</string>
+
+    <!-- Header -->
+    <string name="saludo">Hola, Carlos</string>
+    <string name="bienvenida">Bienvenido de nuevo</string>
+    <string name="avatar_iniciales">CM</string>
+    <string name="desc_notificaciones">Notificaciones</string>
+
+    <!-- Card de saldo -->
+    <string name="saldo_disponible">Saldo disponible</string>
+    <string name="saldo_monto">$ 245.680,50</string>
+    <string name="saldo_oculto">•  •  •  •  •  •</string>
+    <string name="cuenta_principal">Cuenta principal •••• 4821</string>
+    <string name="desc_ver_saldo">Mostrar u ocultar saldo</string>
+
+    <!-- Acciones rápidas -->
+    <string name="accion_transferir">Transferir</string>
+    <string name="accion_alias">Tu Alias</string>
+
+    <!-- Movimientos -->
+    <string name="titulo_movimientos">Últimos movimientos</string>
+    <string name="ver_todos">Ver todos</string>
+
+    <!-- Tarjeta -->
+    <string name="titulo_tarjeta">Tu tarjeta</string>
+    <string name="tarjeta_banco">MiBanco</string>
+    <string name="tarjeta_numero">•••• •••• •••• 4821</string>
+    <string name="tarjeta_titular_label">TITULAR</string>
+    <string name="tarjeta_titular">Carlos Méndez</string>
+    <string name="tarjeta_vence_label">VENCE</string>
+    <string name="tarjeta_vence">09/29</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_movimientos">Movimientos</string>
+    <string name="nav_escanear">Escanear</string>
+    <string name="nav_pagos">Pagos</string>
+    <string name="nav_perfil">Perfil</string>
+
+    <!-- Mensajes (toast) -->
+    <string name="msg_alias_copiado">Alias copiado</string>
+    <string name="msg_notificaciones">3 notificaciones nuevas</string>
+    <string name="msg_escanear_qr">Escanear código QR</string>
+
+    <!-- Diálogo de transferencia -->
+    <string name="dialog_transferir_titulo">Nueva transferencia</string>
+    <string name="dialog_destinatario">Destinatario</string>
+    <string name="dialog_monto">Monto</string>
+    <string name="dialog_confirmar">Confirmar</string>
+    <string name="dialog_cancelar">Cancelar</string>
 </resources>
