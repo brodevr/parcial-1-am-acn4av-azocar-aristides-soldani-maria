@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="navy">#0A3D62</color>
+    <color name="navy_dark">#0D4A75</color>
+    <color name="teal">#1ABC9C</color>
+    <color name="gold">#F5C469</color>
+    <color name="bg_screen">#F0F3F4</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="border">#E9EDEF</color>
+    <color name="icon_bg">#F2F6F7</color>
+    <color name="text_secondary">#7A8B94</color>
+    <color name="text_muted">#8E9DA5</color>
+    <color name="nav_inactive">#9AA8B0</color>
 </resources>
