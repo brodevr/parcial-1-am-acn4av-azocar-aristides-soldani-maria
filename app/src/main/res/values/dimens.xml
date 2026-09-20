@@ -24,3 +24,4 @@
     <dimen name="icon_circle">38dp</dimen>
     <dimen name="action_icon">40dp</dimen>
     <dimen name="fab_size">54dp</dimen>
+</resources>
