@@ -40,6 +40,14 @@ public class MovimientoAdapter
         return movimientos.size();
     }
 
+    /**
+     * Inserta un movimiento al principio de la lista y avisa al RecyclerView.
+     */
+    public void agregarMovimiento(Movimiento movimiento) {
+        movimientos.add(0, movimiento);
+        notifyItemInserted(0);
+    }
+
     static class MovimientoViewHolder extends RecyclerView.ViewHolder {
 
         private final TextView tvGlyph;
