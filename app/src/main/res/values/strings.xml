@@ -50,4 +50,36 @@
     <string name="dialog_monto">Monto</string>
     <string name="dialog_confirmar">Confirmar</string>
     <string name="dialog_cancelar">Cancelar</string>
+
+    <!-- Transferir -->
+    <string name="titulo_transferir">Transferir</string>
+    <string name="label_destinatario">Destinatario</string>
+    <string name="hint_alias">Alias, CBU o CVU</string>
+    <string name="label_contactos">Contactos frecuentes</string>
+    <string name="label_monto">¿Cuánto querés transferir?</string>
+    <string name="hint_monto">0</string>
+    <string name="btn_continuar">Continuar</string>
+    <string name="btn_confirmar">Confirmar transferencia</string>
+    <string name="msg_transferencia_ok">Transferencia realizada</string>
+    <string name="msg_monto_invalido">Ingresá un monto válido</string>
+    <string name="msg_saldo_insuficiente">Saldo insuficiente</string>
+    <string name="msg_destinatario_vacio">Ingresá un destinatario</string>
+    <string name="mov_transferencia_enviada">Transferencia enviada</string>
+
+    <!-- Alias -->
+    <string name="titulo_alias">Tus datos</string>
+    <string name="label_alias">Alias</string>
+    <string name="label_cbu">CBU</string>
+    <string name="valor_alias">carlos.mendez.mp</string>
+    <string name="valor_cbu">0000003100010203040506</string>
+    <string name="btn_copiar">Copiar</string>
+    <string name="msg_alias_copiado">Alias copiado</string>
+    <string name="msg_cbu_copiado">CBU copiado</string>
+
+    <!-- Home -->
+    <string name="btn_volver">Volver</string>
+    <string name="desc_ocultar_saldo">Mostrar u ocultar saldo</string>
+    <string name="saldo_oculto">• • • • • •</string>
+    <string name="desc_logo">Logo del banco</string>
+    <string name="ahora">Recién</string>
 </resources>
