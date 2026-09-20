@@ -11,7 +11,6 @@
     <!-- Card de saldo -->
     <string name="saldo_disponible">Saldo disponible</string>
     <string name="saldo_monto">$ 245.680,50</string>
-    <string name="saldo_oculto">•  •  •  •  •  •</string>
     <string name="cuenta_principal">Cuenta principal •••• 4821</string>
     <string name="desc_ver_saldo">Mostrar u ocultar saldo</string>
 
@@ -40,7 +39,6 @@
     <string name="nav_perfil">Perfil</string>
 
     <!-- Mensajes (toast) -->
-    <string name="msg_alias_copiado">Alias copiado</string>
     <string name="msg_notificaciones">3 notificaciones nuevas</string>
     <string name="msg_escanear_qr">Escanear código QR</string>
 
