@@ -158,15 +158,35 @@
 
             </LinearLayout>
 
-            <!-- Movimientos -->
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Encabezado de movimientos -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:text="@string/titulo_movimientos"
-                android:textColor="@color/navy"
-                android:textSize="@dimen/text_title"
-                android:textStyle="bold" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/titulo_movimientos"
+                    android:textColor="@color/navy"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVerTodos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="@dimen/space_sm"
+                    android:text="@string/ver_todos"
+                    android:textColor="@color/teal"
+                    android:textSize="@dimen/text_body"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvMovimientos"
