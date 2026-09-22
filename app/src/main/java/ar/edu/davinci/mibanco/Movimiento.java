@@ -1,22 +1,29 @@
 package ar.edu.davinci.mibanco;
 
-public class Movimiento {
-    private String glyph;      // "↓" o "↑"
-    private String titulo;     // "Transferencia recibida"
-    private String fecha;      // "Hoy, 10:32"
-    private double monto;      // 25000.0
-    private boolean esIngreso;
+import java.io.Serializable;
 
-    public Movimiento(String glyph, String titulo, String fecha,
+/**
+ * Modelo de un movimiento de la cuenta.
+ * Implementa Serializable para poder viajar en un Intent hacia MovimientosActivity.
+ */
+public class Movimiento implements Serializable {
+
+    private final int avatar;          // R.drawable.avatar_*
+    private final String titulo;
+    private final String fecha;
+    private final double monto;
+    private final boolean esIngreso;
+
+    public Movimiento(int avatar, String titulo, String fecha,
                       double monto, boolean esIngreso) {
-        this.glyph = glyph;
+        this.avatar = avatar;
         this.titulo = titulo;
         this.fecha = fecha;
         this.monto = monto;
         this.esIngreso = esIngreso;
     }
 
-    public String getGlyph() { return glyph; }
+    public int getAvatar() { return avatar; }
     public String getTitulo() { return titulo; }
     public String getFecha() { return fecha; }
     public double getMonto() { return monto; }
