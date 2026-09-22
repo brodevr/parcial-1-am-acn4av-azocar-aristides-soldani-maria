@@ -21,6 +21,16 @@
     <!-- Movimientos -->
     <string name="titulo_movimientos">Últimos movimientos</string>
     <string name="ver_todos">Ver todos</string>
+    <string name="desc_avatar_movimiento">Imagen del movimiento</string>
+    <string name="desc_tipo_movimiento">Tipo de movimiento</string>
+    <string name="titulo_todos_movimientos">Todos los movimientos</string>
+    <string name="desc_volver">Volver</string>
+    <string name="mov_farmacia">Farmacia Central</string>
+    <string name="mov_supermercado">Supermercado Norte</string>
+    <string name="mov_streaming">StreamPlus</string>
+    <string name="mov_sueldo">Sueldo</string>
+    <string name="mov_reembolso">Reembolso</string>
+    <string name="mov_recibida">Transferencia recibida</string>
 
     <!-- Tarjeta -->
     <string name="titulo_tarjeta">Tu tarjeta</string>

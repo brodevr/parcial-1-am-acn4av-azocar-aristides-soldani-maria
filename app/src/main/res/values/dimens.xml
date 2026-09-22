@@ -24,4 +24,7 @@
     <dimen name="icon_circle">38dp</dimen>
     <dimen name="action_icon">40dp</dimen>
     <dimen name="fab_size">54dp</dimen>
+    <dimen name="avatar_movimiento">44dp</dimen>
+    <dimen name="badge_size">18dp</dimen>
+    <dimen name="header_icon">24dp</dimen>
 </resources>
