@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
@@ -50,32 +51,41 @@ public class MovimientoAdapter
 
     static class MovimientoViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView tvGlyph;
+        private final ImageView ivAvatar;
+        private final ImageView ivBadge;
         private final TextView tvTitulo;
         private final TextView tvFecha;
         private final TextView tvMonto;
 
         MovimientoViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvGlyph = itemView.findViewById(R.id.tvGlyph);
+            ivAvatar = itemView.findViewById(R.id.ivAvatar);
+            ivBadge = itemView.findViewById(R.id.ivBadge);
             tvTitulo = itemView.findViewById(R.id.tvTitulo);
             tvFecha = itemView.findViewById(R.id.tvFecha);
             tvMonto = itemView.findViewById(R.id.tvMonto);
         }
 
         void bind(Movimiento movimiento) {
-            tvGlyph.setText(movimiento.getGlyph());
+            boolean ingreso = movimiento.esIngreso();
+
+            ivAvatar.setImageResource(movimiento.getAvatar());
+            ivBadge.setImageResource(
+                    ingreso ? R.drawable.ic_arrow_down : R.drawable.ic_arrow_up);
+            ivBadge.setBackgroundResource(
+                    ingreso ? R.drawable.bg_circle_teal : R.drawable.bg_circle_navy);
+
             tvTitulo.setText(movimiento.getTitulo());
             tvFecha.setText(movimiento.getFecha());
             tvMonto.setText(formatearMonto(movimiento));
-
-            int color = ContextCompat.getColor(
+            tvMonto.setTextColor(ContextCompat.getColor(
                     itemView.getContext(),
-                    movimiento.esIngreso() ? R.color.teal : R.color.navy);
-            tvMonto.setTextColor(color);
+                    ingreso ? R.color.teal : R.color.navy));
         }
+        // formatearMonto() queda igual
+    }
 
-        private String formatearMonto(Movimiento movimiento) {
+        private static String formatearMonto(Movimiento movimiento) {
             NumberFormat formato = NumberFormat.getNumberInstance(new Locale("es", "AR"));
             formato.setMaximumFractionDigits(0);
 
@@ -83,4 +93,4 @@ public class MovimientoAdapter
             return signo + "$" + formato.format(Math.abs(movimiento.getMonto()));
         }
     }
-}
+
